@@ -43,7 +43,7 @@ class MineFurnace:
 		self.builder.get_object("lblCoal").set_text(str(coalCount))
 		woodCount = float(amount) * 0.67
 		self.builder.get_object("lblWood").set_text(str(woodCount))
-		stickCount = float(amount) * 1
+		stickCount = float(amount) * 2
 		self.builder.get_object("lblStick").set_text(str(stickCount))
 		rodCount = float(amount) * 0.083
 		self.builder.get_object("lblRod").set_text(str(rodCount))
