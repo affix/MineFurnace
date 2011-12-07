@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="window">
+    <property name="title" translatable="yes">MineFurnace</property>
+    <property name="default_width">280</property>
+    <property name="default_height">320</property>
+    <property name="destroy_with_parent">True</property>
+    <signal name="destroy" handler="on_window_destroy"/>
+    <child>
+      <object class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkImage" id="image1">
+            <property name="width_request">100</property>
+            <property name="height_request">80</property>
+            <property name="visible">True</property>
+            <property name="pixbuf">Furnace-On.png</property>
+          </object>
+          <packing>
+            <property name="x">17</property>
+            <property name="y">27</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblQuestion">
+            <property name="width_request">170</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">How Many Items?</property>
+          </object>
+          <packing>
+            <property name="x">94</property>
+            <property name="y">32</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="txtHowMany">
+            <property name="width_request">82</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="invisible_char">&#x25CF;</property>
+          </object>
+          <packing>
+            <property name="x">123</property>
+            <property name="y">56</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btnCalc">
+            <property name="label" translatable="yes">Calc</property>
+            <property name="width_request">55</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_btnCalc_clicked"/>
+          </object>
+          <packing>
+            <property name="x">214</property>
+            <property name="y">59</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="width_request">99</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Lava Buckets</property>
+          </object>
+          <packing>
+            <property name="x">33</property>
+            <property name="y">107</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblBucket">
+            <property name="width_request">140</property>
+            <property name="height_request">23</property>
+            <property name="visible">True</property>
+            <property name="ypad">3</property>
+            <property name="label" translatable="yes">0</property>
+          </object>
+          <packing>
+            <property name="x">157</property>
+            <property name="y">110</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label3">
+            <property name="width_request">162</property>
+            <property name="height_request">27</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Coal and Charcoal</property>
+          </object>
+          <packing>
+            <property name="x">16</property>
+            <property name="y">136</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblCoal">
+            <property name="width_request">138</property>
+            <property name="height_request">22</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">0</property>
+          </object>
+          <packing>
+            <property name="x">159</property>
+            <property name="y">137</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="Label 4">
+            <property name="width_request">158</property>
+            <property name="height_request">22</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Wood Products</property>
+            <property name="justify">center</property>
+          </object>
+          <packing>
+            <property name="x">10</property>
+            <property name="y">167</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblWood">
+            <property name="width_request">137</property>
+            <property name="height_request">26</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">0</property>
+          </object>
+          <packing>
+            <property name="x">160</property>
+            <property name="y">161</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label7">
+            <property name="width_request">155</property>
+            <property name="height_request">23</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Sticks / Saplings</property>
+          </object>
+          <packing>
+            <property name="x">15</property>
+            <property name="y">195</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblStick">
+            <property name="width_request">135</property>
+            <property name="height_request">29</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">0</property>
+          </object>
+          <packing>
+            <property name="x">162</property>
+            <property name="y">191</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label9">
+            <property name="width_request">95</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Blaze Rods</property>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">229</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="lblRod">
+            <property name="width_request">133</property>
+            <property name="height_request">23</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">0</property>
+          </object>
+          <packing>
+            <property name="x">164</property>
+            <property name="y">229</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLinkButton" id="linkbutton1">
+            <property name="label" translatable="yes">-= http://affix.me =-</property>
+            <property name="width_request">290</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="has_tooltip">True</property>
+            <property name="relief">none</property>
+            <property name="uri">http://affix.me</property>
+          </object>
+          <packing>
+            <property name="y">290</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
