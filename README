@@ -1,0 +1,10 @@
+a simple calculator to calculate your needs when forging in minecraft
+
+Based on : http://www.minecraftforum.net/topic/824008-furnacecalc-tool/
+
+I wrote this as I don't like seeing closed source applications. I chose python for its cross platform scalability and low memory footprint
+
+Requirements :
+	Python >= 2.6
+	PyGTK
+	GTK >= 2.0
